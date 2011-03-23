@@ -1,0 +1,8 @@
+content   enjoyreading                 chrome/content/
+content   enjoyreading                 chrome/content/ contentaccessible=yes
+skin      enjoyreading   classic/1.0   chrome/skin/
+locale    enjoyreading   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://enjoyreading/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://enjoyreading/skin/overlay.css

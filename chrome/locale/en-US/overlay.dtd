@@ -1,0 +1,8 @@
+<!ENTITY enjoyreading.label "Your localized menuitem">
+<!ENTITY enjoyreadingContext.label "Your Menuitem">
+<!ENTITY enjoyreadingContext.accesskey "Y">
+<!ENTITY enjoyreadingToolbarButton.label "Your Toolbar Button">
+<!ENTITY enjoyreadingToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY enjoyreadingSidebar.label "Your Sidebar">
+<!ENTITY enjoyreadingToolbar.name  "example">
+<!ENTITY enjoyreadingToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &enjoyreadingToolbar.name;">
