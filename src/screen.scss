@@ -1,0 +1,171 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/_base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+// Generate the blueprint framework according to your configuration:
+@include blueprint;
+
+@include blueprint-scaffolding;
+
+// Import variables
+@import "partials/variables";
+
+body{
+  @include blueprint(true);
+  //@include showgrid;  
+  background-color: $background_color;
+}
+
+#container{
+  font-family: Palatino, Georgia, Times, 'Times New Roman', serif;
+  @include container;
+  #main{
+    color: $main_color;
+  }
+
+  header{
+    border-top : 10px solid $main_color;    
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    color: $main_color;
+    margin-bottom: 4em;
+  }
+  
+  h1{
+    font-size: 7.4em;
+    margin-bottom: 0;
+    padding: 0.3em 0;
+  }
+  
+  
+  h2{
+    border-top : 5px solid $main_color;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    line-height: 2em;
+    text-indent: 0.5em;
+  }
+  
+}
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection{ background: $secondary_color; color:#fff; text-shadow: none; }
+::selection { background: $secondary_color; color:#fff; text-shadow: none; }
+
+.presentation, .todo, .download, .contacts, .whoami{
+}
+
+.presentation{
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  margin-bottom: 2.5em ;
+  padding-bottom: 4em;
+  img{
+    position: absolute;
+  }
+  p{
+    margin-left: 220px ;
+    margin-bottom: 0;
+    font-size: 2em;
+    line-height: 1.6em;
+  }
+}
+
+.download, .contacts, .description{
+  line-height: 3em;    
+  overflow: auto;
+  margin-bottom: 2.5em;
+  p.calltoaction{
+    margin: 0;
+    @include prepend(3.75);
+    @include append(3.75);
+    @include column(8.5, true);   
+    > span{
+      color: rgba(0,0,0,0.6);
+      font-size: 1em;
+      padding-left: 0.9em;
+      display: inline-block;
+      width: 120px;
+      line-height: 1.2em;
+      position: relative;
+      top: 7px;
+      width: 115px;
+    }    
+  }
+  a{
+    display: inline-block;
+    letter-spacing: 0.04em;
+    position: relative;
+    left: 0.5em;
+    padding: 0 1em 0 3em;
+    color: $third_color;
+    background: $secondary_color;
+    font-size: 1.2em;
+    border-radius: 3px;
+    text-decoration: none;
+    span{
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      font-size: 1.5em;
+      left: 0;
+      position: absolute;
+      text-align: center;
+      width: 1.5em;
+      font-weight: normal;
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    &:visited, &:active, &:hover{
+      color: $third_color;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  a.getit{
+    margin-right: 1em;
+    text-align: center;
+    width: 115px;
+  }
+  a.website{
+    padding: 0 1em ;
+    left: 0;
+  }
+  a.twitter {
+    margin-right: 1em;
+    img{
+      position: relative;
+      top: 3px;
+    }
+  }
+}
+
+.todo, .description{
+  ul, p{
+    font-size: 1.8em;
+  }
+  p{
+    margin-bottom: 0.3em;
+  }
+  p.calltoaction{
+    font-size: 1em;
+  }
+}
+
+.description p:last-child{
+  color: $secondary_color;
+}
+
+
+.contacts{
+  
+}
