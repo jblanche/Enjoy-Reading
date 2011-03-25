@@ -9,17 +9,14 @@
     <stringbundle id="enjoyreading-strings" src="chrome://enjoyreading/locale/overlay.properties"/>
   </stringbundleset>
 
-
+  <!--
 	<statusbar id="status-bar">
 		<statusbarpanel id="link-target-finder-status-bar-icon" class="statusbarpanel-iconic" src="chrome://enjoyreading/skin/toolbar-button.png" tooltiptext="&enjoyreadingToolbarButton.tooltip;" onclick="enjoyreading.onToolbarButtonCommand()" />
 	</statusbar>
+  -->
 
   <toolbarpalette id="BrowserToolbarPalette">
-  <toolbarbutton id="enjoyreading-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
-    label="&enjoyreadingToolbarButton.label;" tooltiptext="&enjoyreadingToolbarButton.tooltip;"
-    oncommand="enjoyreading.onToolbarButtonCommand()"/>
+    <toolbarbutton id="enjoyreading-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional" label="&enjoyreadingToolbarButton.label;" tooltiptext="&enjoyreadingToolbarButton.tooltip;" oncommand="enjoyreading.onToolbarButtonCommand()"/>
   </toolbarpalette>
-
-
 
 </overlay>

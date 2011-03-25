@@ -3,6 +3,9 @@ var enjoyreading = {
     // initialization code
     this.initialized = true;
     this.strings = document.getElementById("enjoyreading-strings");
+    
+    
+    
   },
 
   onMenuItemCommand: function(e) {
@@ -33,3 +36,25 @@ var enjoyreading = {
 window.addEventListener("load", function () { enjoyreading.onLoad(); }, false);
 
 
+Application.getExtensions(function (extensions) {
+    var extension = extensions.get('enjoyreading@jblanche.fr');
+    if (extension.firstRun) {
+      var myId    = "enjoyreading-toolbar-button"; // ID of button to add
+      var afterId = "urlbar-container";    // ID of element to insert after
+      var navBar  = document.getElementById("nav-bar");
+      var curSet  = navBar.currentSet.split(",");
+      console.log(curSet.indexOf(myId));
+      if (curSet.indexOf(myId) == -1) {
+        var pos = curSet.indexOf(afterId) + 1 || curSet.length;
+        var set = curSet.slice(0, pos).concat(myId).concat(curSet.slice(pos));
+
+        navBar.setAttribute("currentset", set.join(","));
+        navBar.currentSet = set.join(",");
+        document.persist(navBar.id, "currentset");
+        try {
+          BrowserToolboxCustomizeDone(true);
+        }
+       catch (e) {}
+      }
+    }
+})
