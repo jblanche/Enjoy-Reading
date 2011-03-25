@@ -83,7 +83,7 @@ body{
   line-height: 3em;    
   overflow: auto;
   margin-bottom: 2.5em;
-  p.calltoaction{
+  div.calltoaction{
     margin: 0;
     @include prepend(3.75);
     @include append(3.75);
@@ -157,13 +157,13 @@ body{
   p{
     margin-bottom: 0.3em;
   }
-  p.calltoaction{
+  div.calltoaction{
     font-size: 1em;
   }
 }
 
-.description p:last-child{
-  color: $secondary_color;
+.description p{
+  line-height: 1.3em;
 }
 
 

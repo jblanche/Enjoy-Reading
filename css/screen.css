@@ -1936,7 +1936,7 @@ body textarea {
   margin-bottom: 2.5em;
 }
 /* line 86, ../src/screen.scss */
-.download p.calltoaction, .contacts p.calltoaction, .description p.calltoaction {
+.download div.calltoaction, .contacts div.calltoaction, .description div.calltoaction {
   margin: 0;
   padding-left: 150px;
   padding-right: 150px;
@@ -1946,11 +1946,11 @@ body textarea {
   width: 330px;
 }
 /* line 139, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .download p.calltoaction, * html .contacts p.calltoaction, * html .description p.calltoaction {
+* html .download div.calltoaction, * html .contacts div.calltoaction, * html .description div.calltoaction {
   overflow-x: hidden;
 }
 /* line 91, ../src/screen.scss */
-.download p.calltoaction > span, .contacts p.calltoaction > span, .description p.calltoaction > span {
+.download div.calltoaction > span, .contacts div.calltoaction > span, .description div.calltoaction > span {
   color: rgba(0, 0, 0, 0.6);
   font-size: 1em;
   padding-left: 0.9em;
@@ -2026,11 +2026,11 @@ body textarea {
   margin-bottom: 0.3em;
 }
 /* line 160, ../src/screen.scss */
-.todo p.calltoaction, .description p.calltoaction {
+.todo div.calltoaction, .description div.calltoaction {
   font-size: 1em;
 }
 
 /* line 165, ../src/screen.scss */
-.description p:last-child {
-  color: #8c0806;
+.description p {
+  line-height: 1.3em;
 }
