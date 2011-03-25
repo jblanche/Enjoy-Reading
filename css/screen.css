@@ -2000,36 +2000,37 @@ body textarea {
   margin-right: 1em;
   text-align: center;
   width: 115px;
+  text-transform: uppercase;
 }
-/* line 139, ../src/screen.scss */
+/* line 140, ../src/screen.scss */
 .download a.website, .contacts a.website, .description a.website {
   padding: 0 1em;
   left: 0;
 }
-/* line 143, ../src/screen.scss */
+/* line 144, ../src/screen.scss */
 .download a.twitter, .contacts a.twitter, .description a.twitter {
   margin-right: 1em;
 }
-/* line 145, ../src/screen.scss */
+/* line 146, ../src/screen.scss */
 .download a.twitter img, .contacts a.twitter img, .description a.twitter img {
   position: relative;
   top: 3px;
 }
 
-/* line 153, ../src/screen.scss */
+/* line 154, ../src/screen.scss */
 .todo ul, .todo p, .description ul, .description p {
   font-size: 1.8em;
 }
-/* line 156, ../src/screen.scss */
+/* line 157, ../src/screen.scss */
 .todo p, .description p {
   margin-bottom: 0.3em;
 }
-/* line 159, ../src/screen.scss */
+/* line 160, ../src/screen.scss */
 .todo p.calltoaction, .description p.calltoaction {
   font-size: 1em;
 }
 
-/* line 164, ../src/screen.scss */
+/* line 165, ../src/screen.scss */
 .description p:last-child {
   color: #8c0806;
 }
