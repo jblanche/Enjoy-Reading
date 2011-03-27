@@ -78,8 +78,8 @@ var readability = {
         window.onload = window.onunload = function() {};
         readConvertLinksToFootnotes = false,
         readStyle = 'style-newspaper';
-        readSize = 'size-medium';
-        readMargin = 'margin-wide';
+        readSize = 'size-large';
+        readMargin = 'margin-medium';
         
         readability.removeScripts(document);
 
@@ -107,9 +107,9 @@ var readability = {
             articleContent    = document.createElement("DIV");
             articleContent.id = "readability-content";
             articleContent.innerHTML = [
-                "<p>Sorry, readability was unable to parse this page for content. If you feel like it should have been able to, please <a href='http://code.google.com/p/arc90labs-readability/issues/entry'>let us know by submitting an issue.</a></p>",
-                (readability.frameHack ? "<p><strong>It appears this page uses frames.</strong> Unfortunately, browser security properties often cause Readability to fail on pages that include frames. You may want to try running readability itself on this source page: <a href='" + readability.biggestFrame.src + "'>" + readability.biggestFrame.src + "</a></p>" : ""),
-                "<p>Also, please note that Readability does not play very nicely with front pages. Readability is intended to work on articles with a sizable chunk of text that you'd like to read comfortably. If you're using Readability on a landing page (like nytimes.com for example), please click into an article first before using Readability.</p>"
+                "<p>Sorry, EnjoyReading was unable to parse this page for content.</p>",
+                (readability.frameHack ? "<p><strong>It appears this page uses frames.</strong> Unfortunately, browser security properties often cause EnjoyReading to fail on pages that include frames. You may want to try running readability itself on this source page: <a href='" + readability.biggestFrame.src + "'>" + readability.biggestFrame.src + "</a></p>" : ""),
+                "<p>Also, please note that EnjoyReading does not play very nicely with front pages. EnjoyReading is intended to work on articles with a sizable chunk of text that you'd like to read comfortably. If you're using EnjoyReading on a landing page (like nytimes.com for example), please click into an article first before using EnjoyReading.</p>"
             ].join('');
 
             nextPageLink = null;
@@ -161,7 +161,7 @@ var readability = {
             articleContent.style.display = "none";
             var rootWarning = document.createElement('p');
                 rootWarning.id = "readability-warning";
-                rootWarning.innerHTML = "<em>Readability</em> was intended for use on individual articles and not home pages. " +
+                rootWarning.innerHTML = "<em>EnjoyReading</em> was intended for use on individual articles and not home pages. " +
                     "If you'd like to try rendering this page anyway, <a onClick='javascript:document.getElementById(\"readability-warning\").style.display=\"none\";document.getElementById(\"readability-content\").style.display=\"block\";'>click here</a> to continue.";
 
             innerDiv.insertBefore( rootWarning, articleContent );
@@ -373,12 +373,13 @@ var readability = {
         "<div id='rdb-footer-print'>Excerpted from <cite>" + document.title + "</cite><br />" + window.location.href + "</div>",
         "<div id='rdb-footer-wrapper'>",
              "<div id='rdb-footer-left'>",
+                 "<a href='http://jblanche.github.com/Enjoy-Reading' id='enjoyreading-logo'>Enjoy Reading</a>",
+                 "<span id='enjoyreading-based'>&nbsp;is heavily based on&nbsp;</span>",
                  "<a href='http://lab.arc90.com/experiments/readability' id='readability-logo'>Readability &mdash;&nbsp;</a>",
                  "<a href='http://www.arc90.com/' id='arc90-logo'> An Arc90 Laboratory Experiment&nbsp;</a>",
                  " <span id='readability-url'> http://lab.arc90.com/experiments/readability</span>",
              "</div>",
              "<div id='rdb-footer-right'>",
-                 "<a href='http://www.twitter.com/arc90' class='footer-twitterLink'>Follow us on Twitter &raquo;</a>",
                  "<span class='version'>Readability version " + readability.version + "</span>",
              "</div>",
         "</div>"].join('');

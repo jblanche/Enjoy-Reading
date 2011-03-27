@@ -7,6 +7,7 @@
     <em:version>0.1</em:version>
     <em:creator>Jonathan Blanchet</em:creator>
     <em:contributor></em:contributor>
+    <em:iconURL>chrome://enjoyreading/skin/logo.png </em:iconURL>
     <em:description>Improve the readability of your favorites websites and get the best online reading experience.</em:description>
     <em:targetApplication>
       <Description>

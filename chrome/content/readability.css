@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Document */
 body{font-size:10px;line-height:1;}
-#readability-logo,#arc90-logo,.footer-twitterLink,#readTools a,a.rdbTK-powered span{background-color:transparent!important;background-image:url(http://lab.arc90.com/experiments/readability/images/sprite-readability.png)!important;background-repeat:no-repeat!important;}
+#enjoyreading-logo, #readability-logo,#arc90-logo,.footer-twitterLink,#readTools a,a.rdbTK-powered span{background-color:transparent!important;background-image:url(chrome://enjoyreading/content/sprite-readability.png)!important;background-repeat:no-repeat!important;}
 #readOverlay{text-rendering:optimizeLegibility;display:block;position:absolute;top:0;left:0;width:100%;}
 #readInner{max-width:800px;margin:1em auto;}
 #readInner a{color:#039;text-decoration:none;}
@@ -23,6 +23,9 @@ body{font-size:10px;line-height:1;}
 #rdb-footer-left{display:inline;float:left;margin-top:15px;width:285px;background-position:0 -36px;}
 .rdbTypekit #rdb-footer-left{width:475px;}
 #rdb-footer-left a,#rdb-footer-left a:link{float:left;}
+#enjoyreading-based, #enjoyreading-logo{float: left; margin-bottom: 1em; height: 40px;line-height: 40px;}
+#enjoyreading-based{margin-left: 0.5em;}
+#enjoyreading-logo{display:inline;background-position:-31px -128px;height:40px;width:40px;text-indent:-9000px;}
 #readability-logo{display:inline;background-position:0 -36px;height:29px;width:189px;text-indent:-9000px;}
 #arc90-logo{display:inline;background-position:right -36px;height:29px;width:96px;text-indent:-9000px;}
 .style-apertura #readability-logo,.style-terminal #readability-logo{background-position:0 -67px;}
