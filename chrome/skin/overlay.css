@@ -3,15 +3,21 @@
   list-style-image: url("chrome://enjoyreading/skin/toolbar-button.png");
   -moz-image-region: rect(0px 24px 24px 0px);
 }
-#enjoyreading-toolbar-button:hover
+#enjoyreading-toolbar-button.inactive:hover, #enjoyreading-toolbar-button.active
 {
   -moz-image-region: rect(24px 24px 48px  0px);
 }
-[iconsize="small"] #enjoyreading-toolbar-button
+
+#enjoyreading-toolbar-button, #enjoyreading-toolbar-button.active:hover
+{
+  -moz-image-region: rect(24px 24px 48px  0px);
+}
+
+[iconsize="small"] #enjoyreading-toolbar-button, [iconsize="small"] #enjoyreading-toolbar-button.active:hover
 {
   -moz-image-region: rect( 0px 40px 16px 24px);
 }
-[iconsize="small"] #enjoyreading-toolbar-button:hover
+[iconsize="small"] #enjoyreading-toolbar-button:hover, [iconsize="small"] #enjoyreading-toolbar-button.active
 {
   -moz-image-region: rect(24px 40px 40px 24px);
 }
