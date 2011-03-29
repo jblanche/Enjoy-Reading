@@ -9,6 +9,11 @@
     <stringbundle id="enjoyreading-strings" src="chrome://enjoyreading/locale/overlay.properties"/>
   </stringbundleset>
 
+	<menupopup id="menu_ToolsPopup">
+		<menuitem label="&enjoyreadingMenuButton.label;" key="enjoy-reading-run-key" oncommand="enjoyreading.onToolbarButtonCommand()"/>
+	</menupopup>
+
+
   <!--
 	<statusbar id="status-bar">
 		<statusbarpanel id="link-target-finder-status-bar-icon" class="statusbarpanel-iconic" src="chrome://enjoyreading/skin/toolbar-button.png" tooltiptext="&enjoyreadingToolbarButton.tooltip;" onclick="enjoyreading.onToolbarButtonCommand()" />
