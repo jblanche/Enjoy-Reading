@@ -13,6 +13,9 @@
 		<menuitem label="&enjoyreadingMenuButton.label;" key="enjoy-reading-run-key" oncommand="enjoyreading.onToolbarButtonCommand()"/>
 	</menupopup>
 
+  <keyset>
+  	<key id="enjoy-reading-run-key" modifiers="accel alt" key="E" oncommand="enjoyreading.onToolbarButtonCommand()"/>
+  </keyset>
 
   <!--
 	<statusbar id="status-bar">
