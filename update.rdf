@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<r:RDF xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns="http://www.mozilla.org/2004/em-rdf#">
+<!-- EnjoyReading Extension -->
+<r:Description about="urn:mozilla:extension:{enjoyreading@jblanche.fr}">
+  <updates>
+    <r:Seq>
+      <r:li>
+        <r:Description>
+          <version>0.2.1</version>
+          <targetApplication>
+            <r:Description>
+              <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
+              <minVersion>4</minVersion>
+              <maxVersion>4.2a1pre</maxVersion>
+              <updateLink>https://enjoyreading-addon.com/code/enjoyreading.xpi</updateLink>
+            </r:Description>
+          </targetApplication>
+        </r:Description>
+      </r:li>
+    </r:Seq>
+  </updates>
+  <version>0.2.1</version>
+  <updateLink>https://enjoyreading-addon.com/code/enjoyreading.xpi</updateLink>
+</r:Description>
+</r:RDF>
