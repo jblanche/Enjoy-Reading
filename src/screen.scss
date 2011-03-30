@@ -81,7 +81,7 @@ body{
 
 .download, .contacts, .description{
   line-height: 3em;    
-  overflow: auto;
+  overflow: hidden;
   margin-bottom: 2.5em;
   div.calltoaction{
     margin: 0;
