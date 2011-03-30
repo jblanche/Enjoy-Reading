@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
-<r:RDF xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-       xmlns="http://www.mozilla.org/2004/em-rdf#">
+<r:RDF xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.mozilla.org/2004/em-rdf#">
 <!-- EnjoyReading Extension -->
-<r:Description about="urn:mozilla:extension:{enjoyreading@jblanche.fr}">
+<r:Description about="urn:mozilla:extension:enjoyreading@jblanche.fr">
   <updates>
     <r:Seq>
       <r:li>
