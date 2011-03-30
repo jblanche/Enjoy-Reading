@@ -1930,13 +1930,19 @@ body textarea {
 }
 
 /* line 82, ../src/screen.scss */
-.download, .contacts, .description {
+.button-icon {
+  position: relative;
+  top: 5px;
+}
+
+/* line 87, ../src/screen.scss */
+.download, .contacts, .description, .usage, .changelog {
   line-height: 3em;
-  overflow: auto;
+  overflow: hidden;
   margin-bottom: 2.5em;
 }
-/* line 86, ../src/screen.scss */
-.download div.calltoaction, .contacts div.calltoaction, .description div.calltoaction {
+/* line 91, ../src/screen.scss */
+.download div.calltoaction, .contacts div.calltoaction, .description div.calltoaction, .usage div.calltoaction, .changelog div.calltoaction {
   margin: 0;
   padding-left: 150px;
   padding-right: 150px;
@@ -1946,11 +1952,11 @@ body textarea {
   width: 330px;
 }
 /* line 139, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .download div.calltoaction, * html .contacts div.calltoaction, * html .description div.calltoaction {
+* html .download div.calltoaction, * html .contacts div.calltoaction, * html .description div.calltoaction, * html .usage div.calltoaction, * html .changelog div.calltoaction {
   overflow-x: hidden;
 }
-/* line 91, ../src/screen.scss */
-.download div.calltoaction > span, .contacts div.calltoaction > span, .description div.calltoaction > span {
+/* line 96, ../src/screen.scss */
+.download div.calltoaction > span, .contacts div.calltoaction > span, .description div.calltoaction > span, .usage div.calltoaction > span, .changelog div.calltoaction > span {
   color: rgba(0, 0, 0, 0.6);
   font-size: 1em;
   padding-left: 0.9em;
@@ -1961,8 +1967,8 @@ body textarea {
   top: 7px;
   width: 115px;
 }
-/* line 103, ../src/screen.scss */
-.download a, .contacts a, .description a {
+/* line 108, ../src/screen.scss */
+.download a, .contacts a, .description a, .usage a, .changelog a {
   display: inline-block;
   letter-spacing: 0.04em;
   position: relative;
@@ -1974,8 +1980,8 @@ body textarea {
   border-radius: 3px;
   text-decoration: none;
 }
-/* line 114, ../src/screen.scss */
-.download a span, .contacts a span, .description a span {
+/* line 119, ../src/screen.scss */
+.download a span, .contacts a span, .description a span, .usage a span, .changelog a span {
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   display: inline-block;
   font-size: 1.5em;
@@ -1987,50 +1993,50 @@ body textarea {
   text-decoration: none;
   color: inherit;
 }
-/* line 127, ../src/screen.scss */
-.download a:visited, .download a:active, .download a:hover, .contacts a:visited, .contacts a:active, .contacts a:hover, .description a:visited, .description a:active, .description a:hover {
+/* line 132, ../src/screen.scss */
+.download a:visited, .download a:active, .download a:hover, .contacts a:visited, .contacts a:active, .contacts a:hover, .description a:visited, .description a:active, .description a:hover, .usage a:visited, .usage a:active, .usage a:hover, .changelog a:visited, .changelog a:active, .changelog a:hover {
   color: white;
 }
-/* line 130, ../src/screen.scss */
-.download a:hover, .contacts a:hover, .description a:hover {
+/* line 135, ../src/screen.scss */
+.download a:hover, .contacts a:hover, .description a:hover, .usage a:hover, .changelog a:hover {
   text-decoration: underline;
 }
-/* line 134, ../src/screen.scss */
-.download a.getit, .contacts a.getit, .description a.getit {
+/* line 139, ../src/screen.scss */
+.download a.getit, .contacts a.getit, .description a.getit, .usage a.getit, .changelog a.getit {
   margin-right: 1em;
   text-align: center;
   width: 115px;
   text-transform: uppercase;
 }
-/* line 140, ../src/screen.scss */
-.download a.website, .contacts a.website, .description a.website {
+/* line 145, ../src/screen.scss */
+.download a.website, .contacts a.website, .description a.website, .usage a.website, .changelog a.website {
   padding: 0 1em;
   left: 0;
 }
-/* line 144, ../src/screen.scss */
-.download a.twitter, .contacts a.twitter, .description a.twitter {
+/* line 149, ../src/screen.scss */
+.download a.twitter, .contacts a.twitter, .description a.twitter, .usage a.twitter, .changelog a.twitter {
   margin-right: 1em;
 }
-/* line 146, ../src/screen.scss */
-.download a.twitter img, .contacts a.twitter img, .description a.twitter img {
+/* line 151, ../src/screen.scss */
+.download a.twitter img, .contacts a.twitter img, .description a.twitter img, .usage a.twitter img, .changelog a.twitter img {
   position: relative;
   top: 3px;
 }
 
-/* line 154, ../src/screen.scss */
-.todo ul, .todo p, .description ul, .description p {
+/* line 159, ../src/screen.scss */
+.todo ul, .todo p, .todo dt, .description ul, .description p, .description dt, .changelog ul, .changelog p, .changelog dt, .usage ul, .usage p, .usage dt {
   font-size: 1.8em;
 }
-/* line 157, ../src/screen.scss */
-.todo p, .description p {
+/* line 162, ../src/screen.scss */
+.todo p, .description p, .changelog p, .usage p {
   margin-bottom: 0.3em;
 }
-/* line 160, ../src/screen.scss */
-.todo div.calltoaction, .description div.calltoaction {
+/* line 165, ../src/screen.scss */
+.todo div.calltoaction, .description div.calltoaction, .changelog div.calltoaction, .usage div.calltoaction {
   font-size: 1em;
 }
 
-/* line 165, ../src/screen.scss */
+/* line 170, ../src/screen.scss */
 .description p {
   line-height: 1.3em;
 }

@@ -79,7 +79,12 @@ body{
   }
 }
 
-.download, .contacts, .description{
+.button-icon{
+  position: relative;
+  top: 5px;
+}
+
+.download, .contacts, .description, .usage, .changelog{
   line-height: 3em;    
   overflow: hidden;
   margin-bottom: 2.5em;
@@ -150,8 +155,8 @@ body{
   }
 }
 
-.todo, .description{
-  ul, p{
+.todo, .description, .changelog, .usage{
+  ul, p, dt{
     font-size: 1.8em;
   }
   p{
